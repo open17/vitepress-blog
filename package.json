@@ -1,0 +1,17 @@
+{
+  "type": "module",
+  "devDependencies": {
+    "vitepress": "^1.0.1"
+  },
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "markdown-it-mathjax3": "^4.3.2",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.1"
+  }
+}
