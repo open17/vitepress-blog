@@ -1394,9 +1394,9 @@ postcss@^8.4.23, postcss@^8.4.35, postcss@^8.4.36, postcss@^8.4.38:
     source-map-js "^1.2.0"
 
 preact@^10.0.0:
-  version "10.20.0"
-  resolved "https://registry.yarnpkg.com/preact/-/preact-10.20.0.tgz#191c10a2ee3b9fca1a7ded6375266266380212f6"
-  integrity sha512-wU7iZw2BjsaKDal3pDRDy/HpPB6cuFOnVUCcw9aIPKG98+ZrXx3F+szkos8BVME5bquyKDKvRlOJFG8kMkcAbg==
+  version "10.20.1"
+  resolved "https://registry.yarnpkg.com/preact/-/preact-10.20.1.tgz#1bc598ab630d8612978f7533da45809a8298542b"
+  integrity sha512-JIFjgFg9B2qnOoGiYMVBtrcFxHqn+dNXbq76bVmcaHYJFYR4lW67AOcXgAYQQTDYXDOg/kTZrKPNCdRgJ2UJmw==
 
 queue-microtask@^1.2.2:
   version "1.2.3"
@@ -1653,15 +1653,20 @@ valid-data-url@^3.0.0:
   integrity sha512-jOWVmzVceKlVVdwjNSenT4PbGghU0SBIizAev8ofZVgivk/TVHXSbNL8LP6M3spZvkR9/QolkyJavGSX5Cs0UA==
 
 vite@^5.2.2:
-  version "5.2.3"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-5.2.3.tgz#198efc2fd4d80eac813b146a68a4b0dbde884fc2"
-  integrity sha512-+i1oagbvkVIhEy9TnEV+fgXsng13nZM90JQbrcPrf6DvW2mXARlz+DK7DLiDP+qeKoD1FCVx/1SpFL1CLq9Mhw==
+  version "5.2.6"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-5.2.6.tgz#fc2ce309e0b4871e938cb0aca3b96c422c01f222"
+  integrity sha512-FPtnxFlSIKYjZ2eosBQamz4CbyrTizbZ3hnGJlh/wMtCrlp1Hah6AzBLjGI5I2urTfNnpovpHdrL6YRuBOPnCA==
   dependencies:
     esbuild "^0.20.1"
     postcss "^8.4.36"
     rollup "^4.13.0"
   optionalDependencies:
     fsevents "~2.3.3"
+
+vitepress-theme-open17@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/vitepress-theme-open17/-/vitepress-theme-open17-0.0.4.tgz#a033f517de8b3acf73b46558e7b74af087d4ff5a"
+  integrity sha512-5J9idnarBD8JXTzsTarDM246E1bVyGhEGNEfCpLPQsZUYj4BIIPZ3whSbRgt8AN2+Rmfsr7Ntiw0ExWb+oiw0A==
 
 vitepress@^1.0.1:
   version "1.0.1"
