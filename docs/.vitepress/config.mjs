@@ -1,20 +1,24 @@
 import { defineConfig } from 'vitepress'
-
+import defaultConfig from 'vitepress-theme-open17/config'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Vitepress Open17",
-  description: "A VitePress Site",
+  extends: defaultConfig,
+  title: "Open17's Blog",
+  description: "My VitePress Blog Site",
   markdown: {
     math: true
   },
+  sitemap: {
+    hostname: 'https://www.open17.vip',
+  },
   head: [['link', { rel: 'icon', href: '/logo.png' }]],
   themeConfig: {
-    logo: '/logo.png',
-    footer: {
-      message: 'Released under the <a href="https://github.com/open17/vitepress-theme-open17/blob/template/LICENSE">Apache 2.0 License</a>.',
-      copyright: 'Copyright © 2023-present <a href="https://github.com/open17">open17</a>'
+    editLink: {
+      pattern: 'https://github.com/open17/personal-blog/edit/main/docs/:path',
+      text: 'Edit this page on GitHub'
     },
+    logo: '/logo.png',
     search: {
       provider: 'local'
     },
@@ -25,31 +29,48 @@ export default defineConfig({
         timeStyle: 'medium'
       }
     },
-    blog:{
-      imgDark:'https://cdn.jsdelivr.net/gh/open17/Pic/img/202403011548000.png',
-      img:'https://cdn.jsdelivr.net/gh/open17/Pic/img/202403241444361.png',
-      title:"Open17's Blog",
-      desc:"Hello,world"
-    },
     nav: [
       { text: 'Home', link: '/' },
       {text:'tags',link:'/page/tags'},
       {text:'archive',link:' /page/archive'},
-      {text:'docs',link:'/page/docs'}
+      {
+        text: 'Computer Basic',
+        items: [
+          { text: 'Intro', link: '/computer-basic/' },
+          { text: 'OS', link: '/computer-basic/OS/' },
+          { text: 'DCN', link: '/computer-basic/DCN/' },
+        ]
+      },
+      { text: 'friends', link: '/page/friends' }
     ],
     sidebar: {
-      '/example/': [
+      '/computer-basic/': [
         {
-          text: 'Examples',
+          text: '操作系统',
           items: [
-            { text: 'Markdown Examples', link: '/example/markdown-examples' },
-            { text: 'Runtime API Examples', link: '/example/api-examples' }
+            { text: '0.基本概念速览', link: '/computer-basic/OS/' },
+            // { text: 'Lec 1', link: '/computer-basic/OS/Lec1' },
+            // { text: 'Lec 2', link: '/computer-basic/OS/Lec1' },
+            // { text: 'Lec 3', link: '/computer-basic/OS/Lec1' },
+            // { text: 'Lec 4', link: '/computer-basic/OS/Lec1' },
+            // { text: 'Lec 5', link: '/computer-basic/OS/Lec1' }
+          ]
+        },
+        {
+          text: '计算机网络原理',
+          items: [
+            { text: 'Lec 0 引入', link: '/computer-basic/DCN/' },
+            { text: 'Lec 1', link: '/computer-basic/DCN/Lec1' },
+            // { text: 'Lec 2', link: '/computer-basic/DCN/Lec1' },
+            // { text: 'Lec 3', link: '/computer-basic/DCN/Lec1' },
+            // { text: 'Lec 4', link: '/computer-basic/DCN/Lec1' },
+            // { text: 'Lec 5', link: '/computer-basic/DCN/Lec1' }
           ]
         }
       ],
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/open17/vitepress-theme-open17/' }
+      { icon: 'github', link: 'https://github.com/open17' }
     ]
   }
 })

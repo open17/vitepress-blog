@@ -1,4 +1,5 @@
 ---
-blog: archive
+layout: archive
 lastUpdated: false
+editLink: false
 ---

@@ -4,22 +4,19 @@ layout: home
 lastUpdated: false
 
 hero:
-  name: "Vitepress Open17"
-  text: "一个简单美观的博客主题,继承于默认主题"
+  name: "Open17's Note"
+  text: "计算机四大件学习笔记"
   tagline:  持续更新中
   image:
     src: /logo.png
     alt: open17
   actions:
     - theme: brand
-      text: 博客文档
-      link: /blog-docs/
+      text: 操作系统
+      link: /computer-basic/OS/
     - theme: alt
-      text: 示例文档
-      link: /example/markdown-examples
-    - theme: alt
-      text: Github
-      link: https://github.com/open17/vitepress-theme-open17
+      text: 计算机网络
+      link: /computer-basic/DCN/
 
 features:
   - title: 开箱即用
