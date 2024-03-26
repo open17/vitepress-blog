@@ -30,7 +30,7 @@ title: 互联网协议基础
 
 一种分法如下:
 
-```mermaidjs
+```md
 stateDiagram
 用户 --> 网络
 state 网络 {

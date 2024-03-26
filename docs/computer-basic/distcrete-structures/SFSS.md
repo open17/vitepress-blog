@@ -8,6 +8,7 @@ categories:
 tags:
     - "Distcrete Structures"
 ---
+
 ## Sets
 - A set is a collection of objects
 - Sets are used to group objects together
@@ -65,7 +66,7 @@ the following two conditions
 If $y = f(x)$ from set A to set B, then   
 - y  is called the image of x under f
 - x  is called a pre-image of y
-- the set of all the images of the elements in the domain under is called the range of f, f(A) = {f(x)|x ∈ A}
+- the set of all the images of the elements in the domain under is called the range of f, $f(A) = {f(x)\|x ∈ A}$
 ### injective function（单射）
 f is one-to-one
 ### urjective function (满射)
@@ -81,8 +82,8 @@ Onto function :$∀y ∈ B (∃x(x ∈A  ∧f (x) =y ))$
 - The smallest integer greater than or equivalent to x
 
 ## Sequences 数列
-Sequences are ordered lists of elements
-• A sequence is a function from a subset of the set of integers
+Sequences are ordered lists of elements.
+A sequence is a function from a subset of the set of integers
 ({0, 1, 2, 3, … } or {1, 2, 3, … }) to a set , denoted {$a_n$}. The
 integers determine the positions of the elements in the list
 ## Summations 求和
