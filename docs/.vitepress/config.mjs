@@ -1,13 +1,17 @@
 import { defineConfig } from 'vitepress'
 import defaultConfig from 'vitepress-theme-open17/config'
-
+import markdownItFootnote from 'markdown-it-footnote'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   extends: defaultConfig,
   title: "Open17's Blog",
   description: "My VitePress Blog Site",
   markdown: {
-    math: true
+    math: true,
+    config: (md) => {
+      // 使用更多的 Markdown-it 插件！
+      md.use(markdownItFootnote)
+    }
   },
   sitemap: {
     hostname: 'https://www.open17.vip',
