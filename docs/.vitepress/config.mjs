@@ -66,6 +66,17 @@ export default defineConfig({
             // { text: 'Lec 4', link: '/computer-basic/DCN/Lec1' },
             // { text: 'Lec 5', link: '/computer-basic/DCN/Lec1' }
           ]
+        },
+        {
+          text: '离散数学',
+          items: [
+            { text: '0.Intro & Logic', link: '/computer-basic/distcrete-structures/' },
+             {text: '1.SFSS', link: '/computer-basic/distcrete-structures/SFSS' },
+            { text: '2.Counting', link: '/computer-basic/distcrete-structures/Counting' },
+            { text: '3.Relations', link: '/computer-basic/distcrete-structures/Relations' },
+            { text: '4.Graph', link: '/computer-basic/distcrete-structures/Graph' },
+            { text: '5.Tree', link: '/computer-basic/distcrete-structures/Tree' }
+          ]
         }
       ],
     },
