@@ -221,17 +221,17 @@ POS同上
 can represent {+  .   ——} using  Operate O
 ### Logic circuits
 #### Logic gates
-![pic](LogicGate.PNG)
-![buf](Buffer.PNG)
+LogicGate.PNG
+Buffer.PNG
 ### Logic circuits
 
 #### Karnaugh maps[^4]
-![map](KarnaughMap.PNG)
+KarnaughMap.PNG
 1、取大不取小，圈越大，消去的变量越多，与项越简单，能画入大圈就不画入小圈；   
 2、圈数越少，化简后的与项就越少；   
 3、一个最小项可以重复使用，即只要需要，一个方格可以同时被多圈所圈  
 #### Steps in designing a logic circuit
-![step](Step2design.PNG)
+Step2design.PNG
 
 
 
