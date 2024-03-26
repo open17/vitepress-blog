@@ -5,7 +5,7 @@ lastUpdated: false
 
 hero:
   name: "Open17's Note"
-  text: "计算机四大件学习笔记"
+  text: "CST学习笔记"
   tagline:  持续更新中
   image:
     src: /logo.png
@@ -17,6 +17,9 @@ hero:
     - theme: alt
       text: 计算机网络
       link: /computer-basic/DCN/
+    - theme: alt
+      text: 离散数学
+      link: /computer-basic/distcrete-structures/
 
 features:
   - title: 开箱即用

@@ -1,13 +1,17 @@
 import { defineConfig } from 'vitepress'
 import defaultConfig from 'vitepress-theme-open17/config'
-
+import markdownItFootnote from 'markdown-it-footnote'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   extends: defaultConfig,
   title: "Open17's Blog",
   description: "My VitePress Blog Site",
   markdown: {
-    math: true
+    math: true,
+    config: (md) => {
+      // 使用更多的 Markdown-it 插件！
+      md.use(markdownItFootnote)
+    }
   },
   sitemap: {
     hostname: 'https://www.open17.vip',
@@ -65,6 +69,17 @@ export default defineConfig({
             // { text: 'Lec 3', link: '/computer-basic/DCN/Lec1' },
             // { text: 'Lec 4', link: '/computer-basic/DCN/Lec1' },
             // { text: 'Lec 5', link: '/computer-basic/DCN/Lec1' }
+          ]
+        },
+        {
+          text: '离散数学',
+          items: [
+            { text: '0.Intro & Logic', link: '/computer-basic/distcrete-structures/' },
+             {text: '1.SFSS', link: '/computer-basic/distcrete-structures/SFSS' },
+            { text: '2.Counting', link: '/computer-basic/distcrete-structures/Counting' },
+            { text: '3.Relations', link: '/computer-basic/distcrete-structures/Relations' },
+            { text: '4.Graph', link: '/computer-basic/distcrete-structures/Graph' },
+            { text: '5.Tree', link: '/computer-basic/distcrete-structures/Tree' }
           ]
         }
       ],
