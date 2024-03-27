@@ -35,17 +35,18 @@ export default defineConfig({
     },
     nav: [
       { text: 'Home', link: '/' },
-      {text:'tags',link:'/page/tags'},
-      {text:'archive',link:' /page/archive'},
+      {text:'Tags',link:'/page/tags'},
+      {text:'Archive',link:' /page/archive'},
       {
         text: 'Computer Basic',
         items: [
           { text: 'Intro', link: '/computer-basic/' },
           { text: 'OS', link: '/computer-basic/OS/' },
           { text: 'DCN', link: '/computer-basic/DCN/' },
+          {text:'distcrete-structures',link:'/computer-basic/distcrete-structures'}
         ]
       },
-      { text: 'friends', link: '/page/friends' }
+      { text: 'Friends', link: '/page/friends' }
     ],
     sidebar: {
       '/computer-basic/': [
