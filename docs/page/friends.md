@@ -12,8 +12,7 @@ const members = [
   {
     avatar: 'https://avatars.githubusercontent.com/u/121916671?v=4',
     name: 'AllenYGY',
-    title: 'RA',
-    org:"Tang Lib",
+    title: '坐看苍苔色，欲上人衣来。',
     desc:"<a href='https://allenygy.github.io/' target='_blank'>View more</a>",
   },
   {
