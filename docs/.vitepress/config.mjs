@@ -58,7 +58,8 @@ export default defineConfig({
             // { text: 'Lec 2', link: '/computer-basic/OS/Lec1' },
             // { text: 'Lec 3', link: '/computer-basic/OS/Lec1' },
             // { text: 'Lec 4', link: '/computer-basic/OS/Lec1' },
-            // { text: 'Lec 5', link: '/computer-basic/OS/Lec1' }
+            // { text: 'Lec 5', link: '/computer-basic/OS/Lec1' },
+            {text:'x.附录',link:'/computer-basic/OS/append'}
           ]
         },
         {
