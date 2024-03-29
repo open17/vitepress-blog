@@ -18,6 +18,10 @@ export default defineConfig({
   },
   head: [['link', { rel: 'icon', href: '/logo.png' }]],
   themeConfig: {
+    footer: {
+      message: 'All blogs and docs are licensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0</a>',
+      copyright: 'Copyright © 2023-present <a href="https://github.com/open17">open17</a>'
+    },
     editLink: {
       pattern: 'https://github.com/open17/personal-blog/edit/main/docs/:path',
       text: 'Edit this page on GitHub'
@@ -35,15 +39,28 @@ export default defineConfig({
     },
     nav: [
       { text: 'Home', link: '/' },
-      {text:'Tags',link:'/page/tags'},
-      {text:'Archive',link:' /page/archive'},
+      { text: 'Tags', link: '/page/tags' },
+      { text: 'Archive', link: ' /page/archive' },
       {
-        text: 'Computer Basic',
+        text: 'CST Note',
         items: [
-          { text: 'Intro', link: '/computer-basic/' },
-          { text: 'OS', link: '/computer-basic/OS/' },
-          { text: 'DCN', link: '/computer-basic/DCN/' },
-          {text:'distcrete-structures',link:'/computer-basic/distcrete-structures'}
+          {
+            text: 'Intro',
+            link: '/page/note'
+          },
+          {
+            text: 'Computer Basic',
+            items: [
+              { text: 'OS', link: '/computer-basic/OS/' },
+              { text: 'DCN', link: '/computer-basic/DCN/' },
+              { text: 'DS', link: '/computer-basic/distcrete-structures/' }]
+          },
+          {
+            text: 'MIT Course',
+            items: [
+              { text: 'MIT 6.S081', link: '/mit/6.S081/0.md' },
+            ]
+          }
         ]
       },
       { text: 'Friends', link: '/page/friends' }
@@ -59,7 +76,7 @@ export default defineConfig({
             // { text: 'Lec 3', link: '/computer-basic/OS/Lec1' },
             // { text: 'Lec 4', link: '/computer-basic/OS/Lec1' },
             // { text: 'Lec 5', link: '/computer-basic/OS/Lec1' },
-            {text:'x.附录',link:'/computer-basic/OS/append'}
+            { text: 'x.附录', link: '/computer-basic/OS/append' }
           ]
         },
         {
@@ -77,7 +94,7 @@ export default defineConfig({
           text: '离散数学',
           items: [
             { text: '0.Intro & Logic', link: '/computer-basic/distcrete-structures/' },
-             {text: '1.SFSS', link: '/computer-basic/distcrete-structures/SFSS' },
+            { text: '1.SFSS', link: '/computer-basic/distcrete-structures/SFSS' },
             { text: '2.Counting', link: '/computer-basic/distcrete-structures/Counting' },
             { text: '3.Relations', link: '/computer-basic/distcrete-structures/Relations' },
             { text: '4.Graph', link: '/computer-basic/distcrete-structures/Graph' },
