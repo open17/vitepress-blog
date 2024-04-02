@@ -1,11 +1,13 @@
 import { defineConfig } from 'vitepress'
 import defaultConfig from 'vitepress-theme-open17/config'
 import markdownItFootnote from 'markdown-it-footnote'
+import { genFeed } from 'vitepress-theme-open17/genFeed'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   extends: defaultConfig,
   title: "Open17's Blog",
   description: "My VitePress Blog Site",
+  buildEnd: genFeed,
   markdown: {
     math: true,
     config: (md) => {
@@ -18,6 +20,17 @@ export default defineConfig({
   },
   head: [['link', { rel: 'icon', href: '/logo.png' }]],
   themeConfig: {
+    blog: {
+      homeImgDark:"https://cdn.jsdelivr.net/gh/open17/Pic/img/202404021405381.jpg",
+      bgImg: "https://cdn.jsdelivr.net/gh/open17/Pic/img/202404020226261.png",
+      ornateStyle: true,
+      bgImgDark: "https://cdn.jsdelivr.net/gh/open17/Pic/img/202403011548000.png"
+    },
+    feed: {
+      baseUrl: "https://www.open17.vip", // 你的部署的域名,必须
+      copyright: "Copyright © 2023-present open17", //版权声明,可选
+      image: "https://www.open17.vip/logo.png", // RSS图片,可选
+    },
     footer: {
       message: 'All blogs and docs are licensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0</a>',
       copyright: 'Copyright © 2023-present <a href="https://github.com/open17">open17</a>'
@@ -39,15 +52,21 @@ export default defineConfig({
     },
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Tags', link: '/page/tags' },
-      { text: 'Archive', link: ' /page/archive' },
+      {
+        text: "Portfolio",
+        link: "/page/portfolio"
+      },
+      {
+        text: "Blog",
+        items: [
+          { text: 'Tags', link: '/page/tags' },
+          { text: 'Archive', link: ' /page/archive' },
+          { text: 'Friends', link: '/page/friends' }
+        ]
+      },
       {
         text: 'CST Note',
         items: [
-          {
-            text: 'Intro',
-            link: '/page/note'
-          },
           {
             text: 'Computer Basic',
             items: [
@@ -63,7 +82,7 @@ export default defineConfig({
           }
         ]
       },
-      { text: 'Friends', link: '/page/friends' }
+
     ],
     sidebar: {
       '/computer-basic/': [
