@@ -10,7 +10,7 @@ hero:
   text: "这里是open17的个人博客"
   tagline:  下面是一些常用的跳转按钮~
   image:
-    src: /logo.png
+    src: "https://cdn.jsdelivr.net/gh/open17/Pic/img/202402082225465.png"
     alt: open17
   actions:
     - theme: brand  

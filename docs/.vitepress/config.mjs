@@ -21,10 +21,12 @@ export default defineConfig({
   head: [['link', { rel: 'icon', href: '/logo.png' }]],
   themeConfig: {
     blog: {
-      homeImgDark:"https://cdn.jsdelivr.net/gh/open17/Pic/img/202404021405381.jpg",
-      bgImg: "https://cdn.jsdelivr.net/gh/open17/Pic/img/202404020226261.png",
+      avatar:"https://cdn.jsdelivr.net/gh/open17/Pic/img/202402050154255.png",
+      homeImgDark: "https://cdn.jsdelivr.net/gh/open17/Pic/img/202404021405381.jpg",
       ornateStyle: true,
-      bgImgDark: "https://cdn.jsdelivr.net/gh/open17/Pic/img/202403011548000.png"
+      bgImg: "https://cdn.jsdelivr.net/gh/open17/Pic/img/202404020226261.png",
+      bgImgDark: "https://cdn.jsdelivr.net/gh/open17/Pic/img/202404061333172.jpeg",
+      pageSize:5,
     },
     feed: {
       baseUrl: "https://www.open17.vip", // 你的部署的域名,必须
