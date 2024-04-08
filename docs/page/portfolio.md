@@ -66,10 +66,11 @@ const projects = [
   },
    {
     avatar: 'https://cdn.jsdelivr.net/gh/open17/Pic/img/202404020439621.png',
-    name: 'Python-for-CP',
+    name: 'xcpc-note',
     title: '我的算法竞赛模板',
     links: [
       { icon: 'github', link: 'https://github.com/open17/Python-for-CP' },
+      {icon:{svg: webSvg},link: 'https://xcpc.open17.vip'}
     ]
   },
    {
@@ -139,9 +140,7 @@ const tools = [
 
 到{{posts[0].frontmatter.date.substring(0,10)}},写下了最近一次的博客: {{posts[0].frontmatter.title}}  
 
-总计已经写下了篇{{posts.length}}博客,平均下来{{Math.ceil(((Math.abs((new Date(posts[posts.length-1].frontmatter.date)).getTime()-(new Date(posts[0].frontmatter.date)).getTime()))/ (1000 * 3600 * 24))/posts.length)}}天写一篇博客
-
-![](https://github-readme-stats.vercel.app/api?username=open17&show_icons=true&layout=compact&theme=vue)
+总计已经写下了{{posts.length}}篇博客,平均下来{{Math.ceil(((Math.abs((new Date(posts[posts.length-1].frontmatter.date)).getTime()-(new Date(posts[0].frontmatter.date)).getTime()))/ (1000 * 3600 * 24))/posts.length)}}天写一篇博客
 
 ---
 # 我的小项目

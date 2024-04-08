@@ -21,12 +21,12 @@ export default defineConfig({
   head: [['link', { rel: 'icon', href: '/logo.png' }]],
   themeConfig: {
     blog: {
-      avatar:"https://cdn.jsdelivr.net/gh/open17/Pic/img/202402050154255.png",
+      avatar: "https://cdn.jsdelivr.net/gh/open17/Pic/img/202402050154255.png",
       homeImgDark: "https://cdn.jsdelivr.net/gh/open17/Pic/img/202404021405381.jpg",
       ornateStyle: true,
       bgImg: "https://cdn.jsdelivr.net/gh/open17/Pic/img/202404020226261.png",
       bgImgDark: "https://cdn.jsdelivr.net/gh/open17/Pic/img/202404061333172.jpeg",
-      pageSize:5,
+      pageSize: 5,
     },
     feed: {
       baseUrl: "https://www.open17.vip", // 你的部署的域名,必须
@@ -59,14 +59,6 @@ export default defineConfig({
         link: "/page/portfolio"
       },
       {
-        text: "Blog",
-        items: [
-          { text: 'Tags', link: '/page/tags' },
-          { text: 'Archive', link: ' /page/archive' },
-          { text: 'Friends', link: '/page/friends' }
-        ]
-      },
-      {
         text: 'CST Note',
         items: [
           {
@@ -84,7 +76,15 @@ export default defineConfig({
           }
         ]
       },
-
+      {
+        text: "More",
+        items: [
+          { text: 'Tags', link: '/page/tags' },
+          { text: 'Archive', link: ' /page/archive' },
+          { text: 'Friends', link: '/page/friends' },
+          {text:'XCPC',link:'https://xcpc.open17.vip'}
+        ]
+      },
     ],
     sidebar: {
       '/computer-basic/': [
