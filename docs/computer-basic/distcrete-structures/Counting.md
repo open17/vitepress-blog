@@ -1,13 +1,4 @@
----
-title: 离散数学————Counting
-description: It is the study of arrangements of objects,also called combinatorics
-slug: Counting
-date: 2022-05-08 00:00:00+0000
-categories:
-    - Math
-tags:
-    - "Distcrete Structures"
----
+# Counting
 ## Basic Counting Principles
 ### The product rule
 乘法原理

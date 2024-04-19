@@ -1,13 +1,4 @@
----
-title:  离散数学---Tree
-description: A tree is a connected undirected simple graph that contains no simple circuits.
-slug: dstree
-date: 2022-05-01 00:00:00+0000
-categories:
-    - Math
-tags:
-    - "Distcrete Structures"
----
+# Tree
 > A tree is a connected undirected simple graph that contains no simple circuits.
 ## Rooted Trees
 ### concept

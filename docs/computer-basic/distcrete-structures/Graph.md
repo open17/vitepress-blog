@@ -1,14 +1,4 @@
----
-title: 离散数学————Graph
-description: 基础图论
-slug: dmgraph
-date: 2022-05-01 00:00:00+0000
-categories:
-    - Math
-    - Graph
-tags:
-    - "Distcrete Structures"
----
+# Graph
 ## Graph Theory
 ### Graph concepts
 #### Definition1

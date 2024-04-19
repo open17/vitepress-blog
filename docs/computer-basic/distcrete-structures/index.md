@@ -1,11 +1,4 @@
----
-tags: 
-    - "Distcrete Structures"
-    - 笔记
-img: blog.png
-desc: 离散数学笔记系列
----
-# 离散数学
+# Distcrete Structures
 
 :::info 注意
 离散数学笔记为早年学习笔记直接搬运

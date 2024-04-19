@@ -1,14 +1,4 @@
----
-title: 离散数学——SFSS
-description: Sets, Functions, Sequences and Summations
-slug: SFSS
-date: 2022-05-05 00:00:00+0000
-categories:
-    - Math
-tags:
-    - "Distcrete Structures"
----
-
+# SFSS
 ## Sets
 - A set is a collection of objects
 - Sets are used to group objects together

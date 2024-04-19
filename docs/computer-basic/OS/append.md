@@ -1,8 +1,6 @@
-# 附录-单词与概念
-
+# Append-words
 
 ## Cp5. CPU Scheduling
-
 
 ### 概念
 - preemptive: 强占
