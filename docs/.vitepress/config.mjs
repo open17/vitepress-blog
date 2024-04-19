@@ -82,14 +82,16 @@ export default defineConfig({
           {
             text: 'Computer Basic',
             items: [
-              { text: 'OS', link: '/computer-basic/OS/' },
-              { text: 'DCN', link: '/computer-basic/DCN/' },
-              { text: 'DS', link: '/computer-basic/distcrete-structures/' }]
+              { text: 'OS', link: '/Computer/OS/' },
+              { text: '操作系统', link: '/Computer/OS-CN/' },
+              { text: 'DCN', link: '/Computer/DCN/' },
+              { text: 'DS', link: '/Computer/Distcrete/' }
+            ]
           },
           {
             text: 'MIT Course',
             items: [
-              { text: 'MIT 6.S081', link: '/mit/6.S081/0.md' },
+              { text: 'MIT 6.S081', link: '/MIT-Course/6.S081/' },
             ]
           }
         ]
