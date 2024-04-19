@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vitepress dev docs --port 8080",
     "build": "vitepress build docs",
-    "preview": "vitepress preview docs"
+    "preview": "vitepress preview docs",
+    "blog":"node scripts/blog.js"
   },
   "dependencies": {
     "autoprefixer": "^10.4.19",
