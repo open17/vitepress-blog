@@ -106,39 +106,14 @@ export default defineConfig({
             text: "Portfolio",
             link: "/page/portfolio"
           },
+          { 
+            text: "Slides Collection",
+            link: "https://slides.open17.vip"
+          }
         ]
       },
       { text: 'Alg', link: 'https://alg.open17.vip' },
     ],
-    // sidebar: {
-    //   '/computer-basic/': [
-    //     {
-    //       text: '操作系统',
-    //       items: [
-    //         { text: '0.基本概念速览', link: '/computer-basic/OS/' },
-    //         { text: 'x.附录', link: '/computer-basic/OS/append' }
-    //       ]
-    //     },
-    //     {
-    //       text: '计算机网络原理',
-    //       items: [
-    //         { text: 'Lec 0 引入', link: '/computer-basic/DCN/' },
-    //         { text: 'Lec 1', link: '/computer-basic/DCN/Lec1' },
-    //       ]
-    //     },
-    //     {
-    //       text: '离散数学',
-    //       items: [
-    //         { text: '0.Intro & Logic', link: '/computer-basic/distcrete-structures/' },
-    //         { text: '1.SFSS', link: '/computer-basic/distcrete-structures/SFSS' },
-    //         { text: '2.Counting', link: '/computer-basic/distcrete-structures/Counting' },
-    //         { text: '3.Relations', link: '/computer-basic/distcrete-structures/Relations' },
-    //         { text: '4.Graph', link: '/computer-basic/distcrete-structures/Graph' },
-    //         { text: '5.Tree', link: '/computer-basic/distcrete-structures/Tree' }
-    //       ]
-    //     }
-    //   ],
-    // },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/open17' }
     ]
