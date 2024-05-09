@@ -7,7 +7,7 @@
     "dev": "vitepress dev docs --port 8080",
     "build": "vitepress build docs",
     "preview": "vitepress preview docs",
-    "blog":"node scripts/blog.js"
+    "blog": "node scripts/blog.js"
   },
   "dependencies": {
     "autoprefixer": "^10.4.19",
@@ -16,6 +16,6 @@
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.1",
     "vite-plugin-vitepress-auto-sidebar": "^1.6.3",
-    "vitepress-theme-open17": "^1.0.2"
+    "vitepress-theme-open17": "^1.1.1"
   }
 }
