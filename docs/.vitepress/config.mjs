@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 import defaultConfig from 'vitepress-theme-open17/config'
 import markdownItFootnote from 'markdown-it-footnote'
 import { genFeed } from 'vitepress-theme-open17/genFeed'
-import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar';
+// import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar';
 
 
 
@@ -10,19 +10,19 @@ export default defineConfig({
   extends: defaultConfig,
   vite: {
     plugins: [
-      AutoSidebar({
-        ignoreList: ['page', 'posts', 'public'],
-        titleFromFile: true,
-        beforeCreateSideBarItems: (data) => {
-          const indexIndex = data.indexOf("index.md");
-          if (indexIndex !== -1) {
-            const indexValue = data[indexIndex];
-            data.splice(indexIndex, 1);
-            data.unshift(indexValue);
-          }
-          return data;
-        }
-      })
+      // AutoSidebar({
+      //   ignoreList: ['page', 'posts', 'public'],
+      //   titleFromFile: true,
+      //   beforeCreateSideBarItems: (data) => {
+      //     const indexIndex = data.indexOf("index.md");
+      //     if (indexIndex !== -1) {
+      //       const indexValue = data[indexIndex];
+      //       data.splice(indexIndex, 1);
+      //       data.unshift(indexValue);
+      //     }
+      //     return data;
+      //   }
+      // })
     ]
   },
   title: "Open17's Blog",
@@ -42,18 +42,22 @@ export default defineConfig({
     blog: {
       avatar: "https://avatars.githubusercontent.com/u/125687556?v=4",
       ornateStyle: true,
-      bgImg: "https://cdn.jsdelivr.net/gh/open17/Pic/img/202404020238396.png",
-      bgImgDark: "https://cdn.jsdelivr.net/gh/open17/Pic/img/202404061333172.jpeg",
       title: "open17",
       desc: "Life is not about waiting for the storm to pass, but learning to dance in the rain.",
-      pageSize: 3,
       tagPageLink: '/page/tags',
-      maxTags: 5
+      maxTags: 5,
+      widgets:[
+        {
+          name:"🎨广告时间", // 自定义链接名称
+          link:'https://vitepress.open17.vip/blog-docs/0-intro/',  //可以为空,非空会显示对应的链接
+          html:`想快速搭建同款博客?使用开源vitepress博客主题吧!<br>点击<a class=" underline text-orange-300 hover:bg-red-400  hover:bg-opacity-45" href="https://vitepress.open17.vip/blog-docs/0-intro/" target="_blank">这里</a>
+          或者右上方即可跳转到主题文档~<img class="object-cover w-full" src="https://cdn.jsdelivr.net/gh/open17/Pic/img/202405071712279.png"/>`, //内容html,支持tailwindcss
+        },
+      ]
     },
     feed: {
       baseUrl: "https://www.open17.vip", // 你的部署的域名,必须
       copyright: "Copyright © 2023-present open17", //版权声明,可选
-      image: "https://www.open17.vip/logo.png", // RSS图片,可选
     },
     footer: {
       message: 'All blogs and docs are licensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0</a>',
