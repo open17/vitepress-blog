@@ -2,29 +2,23 @@ import { defineConfig } from 'vitepress'
 import defaultConfig from 'vitepress-theme-open17/config'
 import markdownItFootnote from 'markdown-it-footnote'
 import { genFeed } from 'vitepress-theme-open17/genFeed'
-// import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar';
 
+import { generateSidebar } from 'vitepress-sidebar';
 
+const vitepressSidebarOptions = [{
+  documentRootPath: 'docs',
+  scanStartPath: 'Computer',
+  resolvePath: '/Computer/',
+  collapsed:true,
+  rootGroupCollapsed:true,
+  useTitleFromFileHeading: true,
+  useFolderTitleFromIndexFile:true,
+  useFolderLinkFromIndexFile: true,
+  hyphenToSpace:true
+}];
 
 export default defineConfig({
   extends: defaultConfig,
-  vite: {
-    plugins: [
-      // AutoSidebar({
-      //   ignoreList: ['page', 'posts', 'public'],
-      //   titleFromFile: true,
-      //   beforeCreateSideBarItems: (data) => {
-      //     const indexIndex = data.indexOf("index.md");
-      //     if (indexIndex !== -1) {
-      //       const indexValue = data[indexIndex];
-      //       data.splice(indexIndex, 1);
-      //       data.unshift(indexValue);
-      //     }
-      //     return data;
-      //   }
-      // })
-    ]
-  },
   title: "Open17's Blog",
   description: "My VitePress Blog Site",
   buildEnd: genFeed,
@@ -39,6 +33,7 @@ export default defineConfig({
   },
   head: [['link', { rel: 'icon', href: '/logo.png' }]],
   themeConfig: {
+    sidebar: generateSidebar(vitepressSidebarOptions),
     blog: {
       avatar: "https://avatars.githubusercontent.com/u/125687556?v=4",
       ornateStyle: true,

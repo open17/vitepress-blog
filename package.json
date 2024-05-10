@@ -1,7 +1,8 @@
 {
   "type": "module",
   "devDependencies": {
-    "vitepress": "^1.0.1"
+    "vitepress": "^1.0.1",
+    "vitepress-sidebar": "^1.22.0"
   },
   "scripts": {
     "dev": "vitepress dev docs --port 8080",
