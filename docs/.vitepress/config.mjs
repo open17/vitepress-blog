@@ -110,7 +110,7 @@ export default defineConfig({
             items: [
               { text: 'Friends', link: '/page/friends' },
               {
-                text: "Portfolio",
+                text: "About",
                 link: "/page/portfolio"
               },
               {
