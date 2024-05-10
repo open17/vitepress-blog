@@ -9,12 +9,12 @@ const vitepressSidebarOptions = [{
   documentRootPath: 'docs',
   scanStartPath: 'Computer',
   resolvePath: '/Computer/',
-  collapsed:true,
-  rootGroupCollapsed:true,
+  collapsed: true,
+  rootGroupCollapsed: true,
   useTitleFromFileHeading: true,
-  useFolderTitleFromIndexFile:true,
+  useFolderTitleFromIndexFile: true,
   useFolderLinkFromIndexFile: true,
-  hyphenToSpace:true
+  hyphenToSpace: true
 }];
 
 export default defineConfig({
@@ -41,11 +41,11 @@ export default defineConfig({
       desc: "Life is not about waiting for the storm to pass, but learning to dance in the rain.",
       tagPageLink: '/page/tags',
       maxTags: 5,
-      widgets:[
+      widgets: [
         {
-          name:"🎨广告时间", // 自定义链接名称
-          link:'https://vitepress.open17.vip/blog-docs/0-intro/',  //可以为空,非空会显示对应的链接
-          html:`想快速搭建同款博客?使用开源vitepress博客主题吧!<br>点击<a class=" underline text-orange-300 hover:bg-red-400  hover:bg-opacity-45" href="https://vitepress.open17.vip/blog-docs/0-intro/" target="_blank">这里</a>
+          name: "🎨广告时间", // 自定义链接名称
+          link: 'https://vitepress.open17.vip/blog-docs/0-intro/',  //可以为空,非空会显示对应的链接
+          html: `想快速搭建同款博客?使用开源vitepress博客主题吧!<br>点击<a class=" underline text-orange-300 hover:bg-red-400  hover:bg-opacity-15 dark:hover:bg-opacity-45" href="https://vitepress.open17.vip/blog-docs/0-intro/" target="_blank">这里</a>
           或者右上方即可跳转到主题文档~<img class="object-cover w-full" src="https://cdn.jsdelivr.net/gh/open17/Pic/img/202405071712279.png"/>`, //内容html,支持tailwindcss
         },
       ]
@@ -98,18 +98,33 @@ export default defineConfig({
       {
         text: "More",
         items: [
-          { text: 'Tags', link: '/page/tags' },
-          { text: 'Archive', link: ' /page/archive' },
-          { text: 'Friends', link: '/page/friends' },
           {
-            text: "Portfolio",
-            link: "/page/portfolio"
+            text: 'Blog Part',
+            items: [
+              { text: 'Tags', link: '/page/tags' },
+              { text: 'Archive', link: ' /page/archive' },
+            ]
           },
-          { 
-            text: "Slides Collection",
-            link: "https://slides.open17.vip"
+          {
+            text: 'Others',
+            items: [
+              { text: 'Friends', link: '/page/friends' },
+              {
+                text: "Portfolio",
+                link: "/page/portfolio"
+              },
+              {
+                text: "Slides",
+                link: "https://slides.open17.vip"
+              },
+              {
+                text:"Theme",
+                link:"https://vitepress.open17.vip/"
+              }
+            ]
           }
         ]
+
       },
       { text: 'Alg', link: 'https://alg.open17.vip' },
     ],

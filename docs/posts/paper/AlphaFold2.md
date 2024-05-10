@@ -10,8 +10,13 @@ tags:
 
 Highly accurate protein structure prediction with AlphaFold
 
----
+<!-- More -->
     
 ## 汇报幻灯片
 
 详见[这里](https://slides.open17.vip/slides/alphfold2)
+
+
+## 题外话
+
+不过现在该读AlphaFold3了
