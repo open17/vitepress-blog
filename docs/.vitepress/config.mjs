@@ -74,12 +74,12 @@ export default defineConfig({
       }
     },
     nav: [
-      { text: 'Home', link: '/' },
+      { text: '博客', link: '/' },
       {
-        text: 'Note',
+        text: '笔记',
         items: [
           {
-            text: 'Computer Basic',
+            text: '计算机基础',
             items: [
               { text: 'OS', link: '/Computer/OS/' },
               { text: '操作系统', link: '/Computer/OS-CN/' },
@@ -90,13 +90,13 @@ export default defineConfig({
           {
             text: 'MIT Course',
             items: [
-              { text: 'MIT 6.S081', link: '/MIT-Course/6.S081/' },
+              { text: '6.S081', link: '/MIT-Course/6.S081/' },
             ]
           }
         ]
       },
       {
-        text: "More",
+        text: "更多",
         items: [
           {
             text: 'Blog Part',
@@ -126,7 +126,7 @@ export default defineConfig({
         ]
 
       },
-      { text: 'Alg', link: 'https://alg.open17.vip' },
+      { text: '算法分站', link: 'https://alg.open17.vip' },
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/open17' }
