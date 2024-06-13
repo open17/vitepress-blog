@@ -109,10 +109,10 @@ export default defineConfig({
             text: 'Others',
             items: [
               { text: 'Friends', link: '/page/friends' },
-              {
-                text: "About",
-                link: "/page/portfolio"
-              },
+              // {
+              //   text: "About",
+              //   link: "/page/portfolio"
+              // },
               {
                 text: "Slides",
                 link: "https://slides.open17.vip"
@@ -120,13 +120,14 @@ export default defineConfig({
               {
                 text:"Theme",
                 link:"https://vitepress.open17.vip/"
-              }
+              },
+              { text: 'Alg', link: 'https://alg.open17.vip' },
             ]
           }
         ]
 
       },
-      { text: '算法分站', link: 'https://alg.open17.vip' },
+      
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/open17' }
