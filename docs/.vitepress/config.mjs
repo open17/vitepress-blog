@@ -35,7 +35,7 @@ export default defineConfig({
   themeConfig: {
     sidebar: generateSidebar(vitepressSidebarOptions),
     blog: {
-      avatar: "https://avatars.githubusercontent.com/u/125687556?v=4",
+      avatar: "/ava.jpg",
       ornateStyle: true,
       title: "Open17",
       desc: "Life is not about waiting for the storm to pass, but learning to dance in the rain.",
