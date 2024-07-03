@@ -1,12 +1,12 @@
 ---
-title: VP乐扣周赛250
+title: VP力扣周赛250
 date: 2024-06-07
 tags:
     - leetcode
     - 力扣周赛
 ---
 
-T4待补...
+关键词: DP,DP优化,字典树,图论
 
 ---
 
@@ -123,6 +123,83 @@ public:
             }
         }
         return ans;
+    }
+};
+```
+## 1938. 查询最大基因差
+
+求多组值与单一值的最大异或,显然是01字典树
+
+但是问题在于给定查询,我们需要找的是根节点到node中任意节点值与val的最大异或,这与树节点有关,每次node不同查询的也不同,我们要按照什么顺序处理呢?
+
+不难发现这与建树的dfs序相关
+
+所以我们可以离线查询,然后按照建树的顺序加入节点的时候插入到01字典树,并查询先关的q,然后回溯的时候删除该数对应的节点
+
+
+```cpp
+class Solution {
+public:
+    int nxt[(int)3e5+10][2][2];
+    int cnt=0,root=-1;
+    vector<int> maxGeneticDifference(vector<int>& parents, vector<vector<int>>& queries) {
+        int n=parents.size();
+        vector<int> g[n+1];
+        vector<pair<int,int>> s[n+1];
+        vector<int> ans(queries.size());
+        memset(nxt,0,sizeof(nxt));
+        int idx=0;
+        for(auto p:queries){
+            // move 1
+            s[p[0]+1].push_back({p[1],idx++});
+        }
+        // move 1
+        for(int i=0;i<n;i++){
+            if(parents[i]+1==0)root=i+1;
+            g[parents[i]+1].push_back(i+1);
+        }
+        dfs(root,g,s,ans);
+        return ans;
+    }
+    void insert(int v){
+        int cur=0;
+        for(int i=30;i>=0;i--){
+            int p=(v>>i)&1;
+            if(!nxt[cur][p][0])nxt[cur][p][0]=++cnt;
+            nxt[cur][p][1]++;
+            cur=nxt[cur][p][0];
+        }
+    }
+    void del(int v){
+        int cur=0;
+        for(int i=30;i>=0;i--){
+            int p=(v>>i)&1;
+            nxt[cur][p][1]--;
+            cur=nxt[cur][p][0];
+        }
+    }
+    int get(int v){
+        int cur=0,val=0;
+        for(int i=30;i>=0;i--){
+            int p=(v>>i)&1;
+            if(nxt[cur][p^1][1]>0){
+                cur=nxt[cur][p^1][0];
+                val+=1<<i;
+                continue;
+            }
+            cur=nxt[cur][p][0];
+        }
+        return val;
+    }
+    void dfs(int node,vector<int> g[],vector<pair<int,int>> s[],vector<int> &ans){
+        insert(node-1);
+        for(auto p:s[node]){
+            ans[p.second]=get(p.first);
+        }
+        for(auto child:g[node]){
+            dfs(child,g,s,ans);
+        }
+        del(node-1);
     }
 };
 ```
