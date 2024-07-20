@@ -62,7 +62,10 @@ export default defineConfig({
       pattern: 'https://github.com/open17/vitepress-blog/edit/template/docs/:path',
       text: 'Edit this page on GitHub'
     },
-    logo: '/logo.png',
+    logo: {
+      dark: '/logo.png',
+      light: '/logo_light.png'
+    },
     search: {
       provider: 'local'
     },
