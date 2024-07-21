@@ -41,6 +41,7 @@ export default defineConfig({
       desc: "Life is not about waiting for the storm to pass, but learning to dance in the rain.",
       tagPageLink: '/page/tags',
       maxTags: 5,
+      bgImgDark: '/bg_dark.jpg',
       widgets: [
         {
           name: "🎨广告时间", // 自定义链接名称
@@ -48,6 +49,7 @@ export default defineConfig({
           html: `想快速搭建同款博客?使用开源vitepress博客主题吧!<br>点击<a class=" underline text-orange-300 hover:bg-red-400  hover:bg-opacity-15 dark:hover:bg-opacity-45" href="https://vitepress.open17.vip/blog-docs/0-intro/" target="_blank">这里</a>
           或者右上方即可跳转到主题文档~<img class="object-cover w-full" src="https://cdn.jsdelivr.net/gh/open17/Pic/img/202405071712279.png"/>`, //内容html,支持tailwindcss
         },
+        
       ]
     },
     feed: {
