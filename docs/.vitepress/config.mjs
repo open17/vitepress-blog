@@ -78,6 +78,19 @@ export default defineConfig({
         timeStyle: 'medium'
       }
     },
+    comment: {
+      use: true,
+      repo: "open17/vitepress-blog",
+      repo_id: "R_kgDOLkwtlg",
+      category: "Announcements",
+      category_id: "DIC_kwDOLkwtls4CeTek", 
+      mapping: "pathname", 
+      strict: "0", 
+      reactions_enabled: "1",
+      emit_metadata: "0", 
+      input_position: "top",
+      lang:"zh-CN"
+    },
     nav: [
       { text: '博客', link: '/' },
       {
@@ -113,20 +126,8 @@ export default defineConfig({
           {
             text: 'Others',
             items: [
+              { text: 'Guide', link: '/posts/pin/guide' },
               { text: 'Friends', link: '/page/friends' },
-              // {
-              //   text: "About",
-              //   link: "/page/portfolio"
-              // },
-              {
-                text: "Slides",
-                link: "https://slides.open17.vip"
-              },
-              {
-                text:"Theme",
-                link:"https://vitepress.open17.vip/"
-              },
-              { text: 'Alg', link: 'https://alg.open17.vip' },
             ]
           }
         ]
