@@ -1,6 +1,5 @@
 ---
 title: "快捷导航 📌"
-desc: 常用的快捷链接
 tags:
     - 导航
 date: 2024-05-22
@@ -33,19 +32,19 @@ features:
     linkText: "点击跳转"
 
   - title: Github
-    icon: 🚀
+    icon: 🎋
     details: "无需多言"
     link: "https://alg.open17.vip/template/0-Intro/IO.html"
     linkText: "点击跳转"
   
   - title: Chatgpt
-    icon: 🤖
+    icon: 🪔
     details: "年轻人的第一款赛博导师"
     link: "https://chat.openai.com/"
     linkText: "点击跳转"
   
   - title: B站
-    icon: 🌸
+    icon: 🌺
     details: "bilibili大学"
     link: "https://www.bilibili.com/"
     linkText: "点击跳转"

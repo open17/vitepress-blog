@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import defaultConfig from 'vitepress-theme-open17/config'
 import markdownItFootnote from 'markdown-it-footnote'
+import markdownItTaskLists from 'markdown-it-task-lists'
 import { genFeed } from 'vitepress-theme-open17/genFeed'
 
 import { generateSidebar } from 'vitepress-sidebar';
@@ -25,7 +26,8 @@ export default defineConfig({
   markdown: {
     math: true,
     config: (md) => {
-      md.use(markdownItFootnote)
+      md.use(markdownItFootnote);
+      md.use(markdownItTaskLists);
     }
   },
   sitemap: {

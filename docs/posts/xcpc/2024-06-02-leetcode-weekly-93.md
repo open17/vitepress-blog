@@ -1,5 +1,5 @@
 ---
-title: VP乐扣周赛93
+title: VP力扣周赛93
 date: 2024-06-02
 tags:
     - leetcode
