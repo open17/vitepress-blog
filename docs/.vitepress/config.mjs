@@ -128,7 +128,7 @@ export default defineConfig({
           {
             text: 'Others',
             items: [
-              { text: 'Guide', link: '/posts/pin/guide' },
+              { text: 'Guide', link: '/page/guide' },
               { text: 'Friends', link: '/page/friends' },
             ]
           }

@@ -1,9 +1,5 @@
 ---
-title: "快捷导航 📌"
-tags:
-    - 导航
-date: 2024-05-22
-pin: true
+title: "快捷导航"
 layout: home
 
 
