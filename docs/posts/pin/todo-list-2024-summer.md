@@ -45,10 +45,10 @@ tags:
 
 :::details 动态规划
 
-- [ ] 树形DP
+- [x] 树形DP
   - [x] 树的直径
-  - [ ] 最小支配&最大独立集 
-  - [ ] 换根DP
+  - [x] 最小支配&最大独立集 
+  - [x] 换根DP
 - [ ] 数位DP
 
 :::
@@ -57,28 +57,29 @@ tags:
 
 :::details 回顾基础知识
 
-- [ ] JAVA基础
-  - [ ] 语法
-  - [ ] OOP
-  - [ ] 反射
-  - [ ] 泛型
-  - [ ] 集合
-  - [ ] 异常
+- [x] JAVA基础
+  - [x] 语法
+  - [x] OOP
+  - [x] 反射
+  - [x] 泛型
+  - [x] 集合
+  - [x] 异常
   
 
-- [ ] 设计模式
-  - [ ] 创造型
-  - [ ] 结构型
-  - [ ] 行为型
+- [x] 设计模式
+  - [x] 创造型
+  - [x] 结构型
+  - [x] 行为型
 
 :::
 
-:::details 熟悉技术栈
+:::details 总结反思
 
-- [ ] Spring Boots
-- [ ] Spring Cloud
-- [ ] Redis
-- [ ] MyBatis-Plus
+- [ ] 分布式，Spring Cloud， 问题
+- [ ] 框架的设计，为什么？
+- [ ] Redis， 缓存， 问题与性能
+- [ ] MyBatis & MyBatis-Plus & 源代码
+- [ ] Shiro & 安全 & 鉴权
 
 :::
 

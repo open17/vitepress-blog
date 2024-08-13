@@ -218,3 +218,56 @@ $$dp_{i,t}=\min_k (dp_{i-1,k} | k \neq t) +cost_{i,t}$$
 
 所以可以优化到$O(n*k)$
 
+## LC3081
+
+[题目](https://leetcode.cn/problems/replace-question-marks-in-string-to-minimize-its-value/description/)
+
+当增加一个问号转换为某个字母的时候，产生的贡献为该字符串的该字母次数
+
+并且替换之间互不干扰，所以决策独立，我们可以直接贪心
+
+所以统计字符个数，然后堆维护最小，贪心的每次将问号转为出现次数最小的字母即可
+
+## LC834
+
+[题目](https://leetcode.cn/problems/sum-of-distances-in-tree/)
+
+求每个节点到树上其他节点的距离和，这种提示太明显了，一眼：
+
+**两次扫描，换根dp**
+
+对于固定一个节点到树上其他节点求距离和，我们可以直接DFS
+
+然后我们思考转移根对整体的贡献：
+
+手玩一下，可以看出子树的距离都减1，非子树的距离都加1
+
+所以第一次先预处理每个子树大小并计算节点0到其它点的距离和
+
+然后第二次从0节点开始换根转移：
+
+$$dp_{son}=dp_{mom}+n-2*tree_{son}$$
+
+
+## LC2581
+
+[题目](https://leetcode.cn/problems/count-number-of-possible-root-nodes/description/)
+
+我们很容易验证一个点作为根的时候是否满足条件
+
+思考换根的时候对整体贡献变化是什么？
+
+假设由根节点由u转移到v，显然这只会影响到u与v父子关系
+
+则有转移方程：
+
+$$dp_v=dp_u+{mom}_{v,u}-{mom}_{u,v}$$
+
+## HDDX
+
+$$A=a_0*p^0+a_1*p^1+...+a_n*p^n$$
+
+$$B=b_0*p^0+b_1*p^1+...+b_m*p^m$$
+
+$$C=(a_0+b_0)\%p*p^0+...+...$$
+
