@@ -263,11 +263,6 @@ $$dp_{son}=dp_{mom}+n-2*tree_{son}$$
 
 $$dp_v=dp_u+{mom}_{v,u}-{mom}_{u,v}$$
 
-## HDDX
+## LC1124
 
-$$A=a_0*p^0+a_1*p^1+...+a_n*p^n$$
-
-$$B=b_0*p^0+b_1*p^1+...+b_m*p^m$$
-
-$$C=(a_0+b_0)\%p*p^0+...+...$$
 
