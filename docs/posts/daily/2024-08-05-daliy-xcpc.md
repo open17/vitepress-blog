@@ -1,13 +1,11 @@
 ---
-title: 每日算法训练
+title: 每日算法训练合集(1)
 date: 2024-08-05
 tags:
     - 算法
-pin: true
-
 ---
 
-持续更新中...
+8月摸鱼合集
 
 ---
 
@@ -263,6 +261,5 @@ $$dp_{son}=dp_{mom}+n-2*tree_{son}$$
 
 $$dp_v=dp_u+{mom}_{v,u}-{mom}_{u,v}$$
 
-## LC1124
 
 
