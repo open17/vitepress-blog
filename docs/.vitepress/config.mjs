@@ -44,6 +44,7 @@ export default defineConfig({
       tagPageLink: '/page/tags',
       maxTags: 5,
       bgImgDark: '/bg_dark.jpg',
+      direct: "lft",
       widgets: [
         {
           name: "🎨广告时间", // 自定义链接名称
