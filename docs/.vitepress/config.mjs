@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 import defaultConfig from 'vitepress-theme-open17/config'
 import markdownItFootnote from 'markdown-it-footnote'
 import markdownItTaskLists from 'markdown-it-task-lists'
+import { figure } from '@mdit/plugin-figure'
 import { genFeed } from 'vitepress-theme-open17/genFeed'
 
 import { generateSidebar } from 'vitepress-sidebar';
@@ -28,6 +29,11 @@ export default defineConfig({
     config: (md) => {
       md.use(markdownItFootnote);
       md.use(markdownItTaskLists);
+      md.use(figure, {
+        figcaption: 'alt',
+        copyAttrs: '^class$',
+        lazy: true
+      }) 
     }
   },
   sitemap: {
