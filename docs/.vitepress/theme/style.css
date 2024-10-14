@@ -45,3 +45,7 @@ figure figcaption {
 figure figcaption a {
   color: var(--vp-c-text-3) !important;
 }
+
+.vp-doc .reveal h2{
+  border-top: none;
+}
