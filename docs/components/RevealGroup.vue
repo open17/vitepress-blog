@@ -17,22 +17,24 @@ import { onMounted, onUnmounted, ref } from 'vue';
 
 const deck = ref(null);
 
-onMounted(() => {
-    initReveal();
-});
 
 onUnmounted(() => {
     destoryReveal();
 });
 
+onMounted(async () => {
+    const Reveal = (await import('reveal.js')).default;
+    const Markdown = (await import('reveal.js/plugin/markdown/markdown.esm.js')).default;
+    const RevealMath = (await import('reveal.js/plugin/math/math.js')).default;
+    
+    initReveal(Reveal, Markdown, RevealMath);
+});
 
-
-const initReveal = () => {
-    console.log("init");
+const initReveal = (Reveal, Markdown, RevealMath) => {
     if (deck.value) return;
     document.querySelector('.reveal').style.width = '50vw';
     document.querySelector('.reveal').style.height = '50vh';
-    deck.value = new Reveal( {
+    deck.value = new Reveal({
         hash: true,
         embedded: true,
         margin: 0.01,
@@ -44,7 +46,8 @@ const initReveal = () => {
 }
 
 const destoryReveal = () => {
-    console.log("destory");
+    if (typeof window === 'undefined') return;
+    // console.log("destory");
     if (deck.value) {
         deck.value.destroy();
         deck.value = null;
