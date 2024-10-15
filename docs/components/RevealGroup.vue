@@ -7,9 +7,6 @@
 </template>
 
 <script setup>
-import Reveal from 'reveal.js';
-import Markdown from 'reveal.js/plugin/markdown/markdown.esm.js';
-import RevealMath from 'reveal.js/plugin/math/math.js';
 import 'reveal.js/dist/theme/white.css'
 import 'reveal.js/dist/reveal.css';
 
@@ -32,8 +29,8 @@ onMounted(async () => {
 
 const initReveal = (Reveal, Markdown, RevealMath) => {
     if (deck.value) return;
-    document.querySelector('.reveal').style.width = '50vw';
-    document.querySelector('.reveal').style.height = '50vh';
+    document.querySelector('.reveal').style.width = '100%';
+    document.querySelector('.reveal').style.height = '25rem';
     deck.value = new Reveal({
         hash: true,
         embedded: true,
