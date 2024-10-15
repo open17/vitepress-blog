@@ -10,11 +10,6 @@ Review of Causal Discovery Methods Based on Graphical Models
 
 ---
 
-
-<script setup>
-import RevealGroup from '../components/RevealGroup.vue'
-</script>
-
 <RevealGroup classID="dk">
 <section data-markdown>
 <textarea data-template>
@@ -90,7 +85,7 @@ Some methods using to build CAUSAL MODELS.
 
 `F` for full screen, `esc` to exit
 
-<!-- @include: ./2024-10-14-Graphical-Causal.md{24,86} -->
+<!-- @include: ./2024-10-14-Graphical-Causal.md{19,81} -->
 
 ## 参考来源
 

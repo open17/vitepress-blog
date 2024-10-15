@@ -116,7 +116,6 @@ export default defineConfig({
           {
             text: '计算机基础',
             items: [
-              { text: 'OS', link: '/Computer/OS/' },
               { text: '操作系统', link: '/Computer/OS-CN/' },
               { text: 'DCN', link: '/Computer/DCN/' },
               { text: 'DS', link: '/Computer/Distcrete/' }

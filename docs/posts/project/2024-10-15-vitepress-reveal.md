@@ -9,11 +9,6 @@ tags:
 基于RevealJs实现在vitepress中增加幻灯片功能
 
 ---
-
-<script setup>
-import RevealGroup from '../components/RevealGroup.vue'
-</script>
-
 ::: details &nbsp;&nbsp;预览幻灯片
 <br>
 <RevealGroup>

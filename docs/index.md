@@ -1,6 +1,6 @@
 ---
 layout: blog
 lastUpdated: false
-bgImg: "/bg2.jpg"
+bgImg: "/bg.jpg"
 bgImgDark: '/bg_dark.jpg'
 ---
