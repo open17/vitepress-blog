@@ -1,22 +1,21 @@
 :root {
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(
-    120deg,
-    #377fed 10%,
-    #47be29
-  );
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg,
+      #377fed 10%,
+      #47be29);
 
   --vp-home-hero-image-background-image: none;
 }
 
-#VPNavBar .content{
+#VPNavBar .content {
   padding-right: 0 !important;
 }
 
-#VPNavBar .content-body{
+#VPNavBar .content-body {
   padding-right: 2rem !important;
 }
-hr{
+
+hr {
   display: none;
 }
 
@@ -46,6 +45,18 @@ figure figcaption a {
   color: var(--vp-c-text-3) !important;
 }
 
-.vp-doc .reveal h2{
+.vp-doc .reveal h2 {
   border-top: none;
+}
+
+.custom-block {
+  border: 1.5px solid transparent;
+}
+
+:root {
+  --vp-custom-block-details-border: rgba(142, 150, 170, 0.28);
+  --vp-custom-block-info-border: rgba(142, 150, 170, 0.28);
+  --vp-custom-block-tip-border: rgba(100, 108, 255, 0.28);
+  --vp-custom-block-warning-border:rgba(234, 179, 8, 0.28);
+  --vp-custom-block-danger-border: rgba(244, 63, 94, 0.28);
 }
