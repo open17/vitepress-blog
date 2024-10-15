@@ -29,11 +29,12 @@ export default defineConfig({
     config: (md) => {
       md.use(markdownItFootnote);
       md.use(markdownItTaskLists);
+      md.block.ruler.disable(['lheading']);
       md.use(figure, {
         figcaption: 'alt',
         copyAttrs: '^class$',
         lazy: true
-      }) 
+      });
     }
   },
   sitemap: {

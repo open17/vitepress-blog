@@ -6,9 +6,10 @@ tags:
     - 幻灯片
 ---
 
-点击幻灯片框,按`F`全屏幻灯片,按`esc`退出
+Review of Causal Discovery Methods Based on Graphical Models
 
 ---
+
 
 <script setup>
 import RevealGroup from '../components/RevealGroup.vue'
@@ -18,7 +19,7 @@ import RevealGroup from '../components/RevealGroup.vue'
 <section data-markdown>
 <textarea data-template>
 ## Graph & Causality
-Review of Causal Discovery Methods Based on Graphical Models
+Review of Causal Discovery Methods Based on Graphical Models  
 ---
 ## Intro
 A fundamental task in various disciplines of science, including biology, is to find underlying
@@ -31,14 +32,14 @@ which is in many cases too expensive, too time-consuming, or even impossible.
 ---
 Therefore,revealing causal information by analyzing purely observational data, known as **causal discovery**,has drawn much attention.
 ---
-## DIRECTED GRAPHICAL CAUSAL MODELS
-![](https://matheusfacure.github.io/python-causality-handbook/_images/graph-flow.png)
+## DGCM
+Directed Graphical Causal Models
+![Graph Flow](https://matheusfacure.github.io/python-causality-handbook/_images/graph-flow.png)
 ---
 ### Chain Structure
-![Chain Stru](https://matheusfacure.github.io/python-causality-handbook/_images/04-Graphical-Causal-Models_4_0.svg)
----
 Dependence flows in the direction of the arrows.
 The greater the causal expertise, the greater your chances of getting a promotion. 
+![Chain](https://matheusfacure.github.io/python-causality-handbook/_images/04-Graphical-Causal-Models_4_0.svg)
 ---
 As a general rule, the dependence flow in the direct path from A to C is blocked when we condition on an intermediary variable B.
 $$
@@ -48,7 +49,8 @@ $$
 A \perp C | B
 $$
 ---
-### fork structure 
+### Fork Structure 
+As a general rule, two variables that share a common cause are dependent, but independent when we condition on the common cause.
 ![fork structure](https://matheusfacure.github.io/python-causality-handbook/_images/04-Graphical-Causal-Models_7_0.svg)
 ---
 $$
@@ -57,9 +59,9 @@ $$
 $$
 A \perp B | C
 $$
-As a general rule, two variables that share a common cause are dependent, but independent when we condition on the common cause.
 ---
 ### Collider structure 
+As a general rule, conditioning on a collider opens the dependence path. Not conditioning on it leaves it closed.
 ![](https://matheusfacure.github.io/python-causality-handbook/_images/04-Graphical-Causal-Models_9_0.svg)
 ---
 $$
@@ -68,10 +70,27 @@ $$
 $$
 A \not \perp B | C
 $$
-As a general rule, conditioning on a collider opens the dependence path. Not conditioning on it leaves it closed.
+---
+## Methods
+Some methods using to build CAUSAL MODELS.
+---
+### The PC Algorithm
+- Form a complete undirected graph
+- Eliminate edges between variables that are unconditionally independent
+- For each pair of variables (A, B) having an edge between them,and for each variable C with an edge connected to either of them, eliminate the edge between A and B if $A \not \perp B | C$
+- Keep on more pair
+---
+### The FCI Algorithm
+- FCI orients edges by a procedure similar to PC but without assuming that every edge is directed one way or the other.
+- Have a 'o' mark,means can be an arrow head or an arrow tail.
+- Bidirected edge between Y and Z indicates that there is at least one unmeasured confounder between Y and Z.
 </textarea>
 </section>
 </RevealGroup>
+
+`F` for full screen, `esc` to exit
+
+<!-- @include: ./2024-10-14-Graphical-Causal.md{24,86} -->
 
 ## 参考来源
 
