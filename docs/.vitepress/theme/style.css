@@ -47,15 +47,3 @@ figure figcaption a {
 .vp-doc .reveal h2 {
   border-top: none;
 }
-
-.custom-block {
-  border: 1.5px solid transparent;
-}
-
-:root {
-  --vp-custom-block-details-border: rgba(142, 150, 170, 0.28);
-  --vp-custom-block-info-border: rgba(142, 150, 170, 0.28);
-  --vp-custom-block-tip-border: rgba(100, 108, 255, 0.28);
-  --vp-custom-block-warning-border:rgba(234, 179, 8, 0.28);
-  --vp-custom-block-danger-border: rgba(244, 63, 94, 0.28);
-}
